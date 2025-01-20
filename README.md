@@ -26,3 +26,12 @@ add the following line inside:
 ```bash
  packages.add(new VideoDecoderPackage());
 ```
+
+
+## REACT NATIVE IMPLEMENTATION
+
+- To use the structure in your React-Native application, copy the "Decoder.bridge.tsx", "VideoCodec.tsx", and "VideoSurface.component.tsx" files into the src directory of your project.
+- In your project, call the following code where you want to display the camera feed:
+
+```bash
+ <VideoCodec IP="{CV200_DEVICE_IP}" SOCKET_PORT={CV_200_DEVICE_WS_PORT} />
